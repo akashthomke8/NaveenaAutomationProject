@@ -18,7 +18,7 @@ public class BaseClass {
 	
 	public void driveresInput() throws IOException
 	{
-		FileInputStream file=new FileInputStream("D:\\EDUCATION   FILES\\Software Testing File\\SeleniumTestNGmavenLK\\src\\main\\java\\Resources\\data.properties");
+		FileInputStream file=new FileInputStream("D:\\EDUCATION   FILES\\AkashJavaProject\\OfficialProjectTechnogeek\\src\\main\\java\\Resources\\data.properties");
 	
 		prop=new Properties();
 		prop.load(file);
@@ -30,24 +30,22 @@ public class BaseClass {
 		}
 		else
 		{
-			System.out.println("CANT OPEN THE BROWSER");
+			System.out.println("can not OPEN THE BROWSER");
 		}
 	}
 	
-	
-	/*
 	@BeforeMethod
 	public void OpenUrl() throws IOException
 	{
 		driveresInput();
-		String urlname=prop.getProperty("url");
-		driver.get(urlname);
+		String urlname1=prop.getProperty("urllink");
+		driver.get(urlname1);
 	}
-	@AfterMethod
+	/*@AfterMethod
 	public void closeUrl()
 	{
 		driver.quit();
-	}
-	*/
+	}*/
+	
 
 }

@@ -12,7 +12,6 @@ public class VerifyLogin extends BaseClass
 	@Test
 		public void login() throws IOException
 		{
-			driveresInput();
-			driver.get("https://naveenautomationlabs.com/opencart/");
+			System.out.println("Tempary Off the Login");
 		}
 }
